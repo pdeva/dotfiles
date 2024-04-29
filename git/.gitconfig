@@ -1,0 +1,22 @@
+[user]
+	name = pdeva
+	email = prashant@astradot.com
+[core]
+	excludesfile = /Users/pdeva/.gitignore_global
+
+[diff]
+        tool = difftastic
+
+[difftool]
+        prompt = false
+
+[difftool "difftastic"]
+        cmd = difft "$LOCAL" "$REMOTE"
+
+[pager]
+	difftool = false
+	branch = false
+
+# `git dft` is less to type than `git difftool`.
+[alias]
+        dft = difftool

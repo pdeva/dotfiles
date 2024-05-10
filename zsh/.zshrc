@@ -102,4 +102,3 @@ source $ZSH/oh-my-zsh.sh
 alias k='kubectl'
 
 
-eval "$(atuin init zsh)"

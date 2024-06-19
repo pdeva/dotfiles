@@ -100,5 +100,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias k='kubectl'
+alias cb='cargo build'
+alias ce='cargo check'
+alias cf='cargo fmt'
 
 

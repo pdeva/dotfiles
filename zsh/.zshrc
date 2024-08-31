@@ -102,6 +102,7 @@ source $ZSH/oh-my-zsh.sh
 alias k='kubectl'
 alias cb='cargo build'
 alias ce='cargo check'
+alias cet='cargo check --tests'
 alias cf='cargo fmt'
 
 

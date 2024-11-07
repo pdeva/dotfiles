@@ -3,17 +3,28 @@
 RUNDIR="/run/user/$(id -u)"
 SYMLINK="${RUNDIR}/ssh_auth.sock"
 
+ARG="$1"
 
-if [ -z "${ZELLIJ}" ]; then
-  if [ ! -S "${SYMLINK}" ]; then
-              echo "creating link"
-              rm -f "${SYMLINK}"
-              ln -s "${SSH_AUTH_SOCK}" "${SYMLINK}"
-              echo "exporting env var"
-              export SSH_AUTH_SOCK="${SYMLINK}"
-              exec zellij
-  else
-    echo "updating link"
-    ln -sf "${SSH_AUTH_SOCK}" "${SYMLINK}"
-  fi
+# if no argument is passed, just print the help
+if [ "${ARG}" == "" ]; then
+  echo "usage: zellij-env.sh [update|shell]"
+  exit 0
+fi
+
+if [ "${ARG}" == "update" ]; then
+  echo "updating link"
+  ln -sf "${SSH_AUTH_SOCK}" "${SYMLINK}"
+  echo "current link: ${SYMLINK}"
+  echo "current SSH_AUTH_SOCK: ${SSH_AUTH_SOCK}"
+  exit 0
+fi
+
+if [ "${ARG}" == "shell" ]; then
+
+  echo "creating link"
+  rm -f "${SYMLINK}"
+  ln -s "${SSH_AUTH_SOCK}" "${SYMLINK}"
+  echo "exporting env var"
+  export SSH_AUTH_SOCK="${SYMLINK}"
+  exec zellij
 fi

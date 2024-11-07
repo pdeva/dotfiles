@@ -15,7 +15,8 @@ if [ -z "${ZELLIJ}" ] && [ "${TERM}" != "dumb" ] && command -v zellij >/dev/null
             ln -s "${SSH_AUTH_SOCK}" "${SYMLINK}"
         fi
     fi
-    exec zellij attach
+    export SSH_AUTH_SOCK="${SYMLINK}"
+    exec zellij
 fi
 
 echo "checking link"

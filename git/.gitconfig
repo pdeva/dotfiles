@@ -2,7 +2,7 @@
 	name = pdeva
 	email = prashant@astradot.com
 [core]
-	excludesfile = /Users/pdeva/.gitignore_global
+	excludesfile = ~/.gitignore_global
 
 [diff]
         tool = difftastic

@@ -16,7 +16,7 @@ if [ "${ARG}" == "update" ]; then
   ln -sf "${SSH_AUTH_SOCK}" "${SYMLINK}"
   echo "current link: ${SYMLINK}"
   echo "current SSH_AUTH_SOCK: ${SSH_AUTH_SOCK}"
-  exit 0
+  exec zellij a
 fi
 
 if [ "${ARG}" == "shell" ]; then

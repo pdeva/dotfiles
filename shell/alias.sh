@@ -1,0 +1,7 @@
+alias k='kubectl'
+alias cb='cargo build'
+alias ce='cargo check'
+alias cet='cargo check --tests'
+alias cf='cargo fmt'
+alias glog2='git log --pretty=format:"%C(auto)%h %C(blue)%ad %C(red)%d %C(reset)%s %C(green)[%an]" --date=short --graph'
+alias ls='eza'

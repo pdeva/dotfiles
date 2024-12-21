@@ -4,3 +4,10 @@
   bold = { family = "Berkeley Mono", style = "Bold" }
   italic = { family = "Berkeley Mono", style = "Italic" }
 
+[general]
+import = [
+  # "~/.config/alacritty/catppuccin-latte.toml"
+  # "~/.config/alacritty/catppuccin-frappe.toml"
+  # "~/.config/alacritty/catppuccin-macchiato.toml"
+   "~/.config/alacritty/catppuccin-mocha.toml"
+]

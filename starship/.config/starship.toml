@@ -1,0 +1,11 @@
+[golang]
+disabled = true
+
+[rust]
+disabled = false
+
+[time]
+disabled = false
+
+[git_metrics]
+disabled = false

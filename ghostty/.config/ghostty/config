@@ -6,3 +6,5 @@ font-family-italic = TX-02 Italic
 font-family-bold-italic = TX-02 Bold Italic
 macos-option-as-alt=true
 resize-overlay = never
+confirm-close-surface = false
+quit-after-last-window-closed = true

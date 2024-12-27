@@ -1,8 +1,8 @@
 theme = catppuccin-mocha
 font-size = 17
-font-family = Berkeley Mono
-font-family-bold = Berkeley Mono Bold
-font-family-italic = Berkeley Mono Italic
-font-family-bold-italic = Berkeley Mono Bold Italic
+font-family = TX-02
+font-family-bold = TX-02 Bold
+font-family-italic = TX-02 Italic
+font-family-bold-italic = TX-02 Bold Italic
 macos-option-as-alt=true
 resize-overlay = never

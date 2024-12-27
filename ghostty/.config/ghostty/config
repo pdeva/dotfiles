@@ -8,3 +8,5 @@ macos-option-as-alt=true
 resize-overlay = never
 confirm-close-surface = false
 quit-after-last-window-closed = true
+keybind = alt+left=unbind
+keybind = alt+right=unbind

@@ -10,3 +10,8 @@ confirm-close-surface = false
 quit-after-last-window-closed = true
 keybind = alt+left=unbind
 keybind = alt+right=unbind
+window-height=51
+window-width=164
+
+# Quick Terminal
+keybind = global:ctrl+grave_accent=toggle_quick_terminal

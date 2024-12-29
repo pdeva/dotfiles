@@ -14,4 +14,5 @@ window-height=51
 window-width=164
 
 # Quick Terminal
-keybind = global:ctrl+grave_accent=toggle_quick_terminal
+keybind = global:super+shift+l=toggle_quick_terminal
+quick-terminal-animation-duration=0.1

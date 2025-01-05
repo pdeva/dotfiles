@@ -8,3 +8,6 @@ brew install stow
 ```shell
 stow git zsh
 ```
+
+Neovim config is in nvim/.config/nvim directory
+

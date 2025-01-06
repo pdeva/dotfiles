@@ -16,6 +16,8 @@ LSPs
 
 ```bash
     brew install lua-language-server
+    rustup component add rust-analyzer
+
 
     # for telescope
     brew install ripgrep

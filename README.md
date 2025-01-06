@@ -16,4 +16,8 @@ LSPs
 
 ```bash
     brew install lua-language-server
+
+    # for telescope
+    brew install ripgrep
+    sudo apt-get install fd-find
 ```

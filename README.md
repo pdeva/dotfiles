@@ -11,3 +11,9 @@ stow git zsh
 
 Neovim config is in nvim/.config/nvim directory
 
+
+LSPs
+
+```bash
+    brew install lua-language-server
+```

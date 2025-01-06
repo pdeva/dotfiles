@@ -1,7 +1,10 @@
-print("Hello, world from pdeva!")
 vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
 vim.keymap.set("n", "<space>x", ":.lua<CR>")
 vim.keymap.set("v", "<space>x", ":lua<CR>")
+
+vim.keymap.set("n", "<space>f", function()
+    vim.lsp.buf.format()
+end)
 
 -- options
 vim.opt.shiftwidth = 4

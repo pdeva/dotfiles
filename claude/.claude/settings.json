@@ -1,3 +1,11 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(head:*)",
+      "Bash(xargs:*)",
+      "Bash(tail:*)"
+    ]
+  },
   "model": "opus"
 }

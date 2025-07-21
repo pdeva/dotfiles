@@ -7,6 +7,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "icon_theme": "VSCode Icons (Light)",
   "vim_mode": true,
   "autosave": {
     "after_delay": {
@@ -18,9 +22,7 @@
       "host": "pd-codebox",
       "projects": [
         {
-          "paths": [
-            "/mnt/code/monorepo"
-          ]
+          "paths": ["/mnt/code/monorepo"]
         }
       ]
     }
@@ -31,5 +33,21 @@
     "mode": "system",
     "light": "One Light",
     "dark": "Tokyo Night"
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "inlayHints": {
+          "maxLength": null,
+          "lifetimeElisionHints": {
+            "enable": "skip_trivial",
+            "useParameterNames": true
+          },
+          "closureReturnTypeHints": {
+            "enable": "always"
+          }
+        }
+      }
+    }
   }
 }

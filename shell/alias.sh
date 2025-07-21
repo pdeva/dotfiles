@@ -13,3 +13,5 @@ alias gcam='git commit --all --message'
 alias gsw='git switch'
 alias gd='git diff'
 alias git-cleanup='git switch main && git branch | grep -v "main" | xargs git branch -D'
+alias clauded='claude --dangerously-skip-permissions'
+

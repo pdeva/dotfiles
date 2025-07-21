@@ -13,5 +13,9 @@ alias gcam='git commit --all --message'
 alias gsw='git switch'
 alias gd='git diff'
 alias git-cleanup='git switch main && git branch | grep -v "main" | xargs git branch -D'
+[ -d "$HOME/.local/bin" ] && case ":$PATH:" in
+  *":$HOME/.local/bin:"*) ;;              # already there → do nothing
+  *) PATH="$HOME/.local/bin:$PATH" ;;     # otherwise prepend
+esac
 alias clauded='claude --dangerously-skip-permissions'
 

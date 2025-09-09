@@ -22,7 +22,34 @@
       "host": "pd-codebox",
       "projects": [
         {
-          "paths": ["/mnt/code/monorepo"]
+          "paths": [
+            "/home/pdeva/dotfiles"
+          ]
+        },
+        {
+          "paths": [
+            "/mnt/code/librdkafka/v2.11.1"
+          ]
+        },
+        {
+          "paths": [
+            "/mnt/code/monorepo"
+          ]
+        }
+      ]
+    },
+    {
+      "host": "pd-codebox",
+      "projects": [
+        {
+          "paths": [
+            "/mnt/code/librdkafka"
+          ]
+        },
+        {
+          "paths": [
+            "/mnt/code/librdkafka/v2.11.1/config.cache"
+          ]
         }
       ]
     }

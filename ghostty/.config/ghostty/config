@@ -1,5 +1,5 @@
 #theme = dark:catppuccin-mocha,light:Monokai Pro Light
-theme = catppuccin-mocha
+#theme = catppuccin-mocha
 
 font-size = 17
 font-family = TX-02

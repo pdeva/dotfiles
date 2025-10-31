@@ -28,6 +28,11 @@
         },
         {
           "paths": [
+            "/mnt/code/librdkafka/master/./"
+          ]
+        },
+        {
+          "paths": [
             "/mnt/code/librdkafka/v2.11.1"
           ]
         },

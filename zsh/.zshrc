@@ -28,4 +28,3 @@ eval "$(atuin init zsh)"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-alias claude="/Users/pdeva/.claude/local/claude"

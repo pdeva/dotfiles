@@ -13,10 +13,31 @@ alias glog='git log --oneline --decorate --graph'
 alias gcam='git commit --all --message'
 alias gsw='git switch'
 alias gd='git diff'
-alias git-cleanup='git switch main && git branch | grep -v "main" | xargs git branch -D'
+alias git-cleanup='git switch main && git_cleanup_delete_branches'
+alias gdp='git-cleanup && { echo "running git pull..."; git pull; }'
+alias clauded='claude --dangerously-skip-permissions'
+alias codexd='codex --dangerously-bypass-approvals-and-sandbox -m gpt-5.1-codex -c model_reasoning_effort="high" --enable web_search_request'
+
 [ -d "$HOME/.local/bin" ] && case ":$PATH:" in
   *":$HOME/.local/bin:"*) ;;              # already there → do nothing
   *) PATH="$HOME/.local/bin:$PATH" ;;     # otherwise prepend
 esac
-alias clauded='claude --dangerously-skip-permissions'
-alias codexd='codex --dangerously-bypass-approvals-and-sandbox -m gpt-5.1-codex -c model_reasoning_effort="high" --enable web_search_request'
+git_cleanup_delete_branches() {
+  local branches branch cleanup_status=0
+
+  branches=$(
+    git for-each-ref --format='%(refname:short) %(worktreepath)' refs/heads |
+      awk '$1 != "main" && $2 == "" { print $1 }'
+  )
+
+  if [ -z "$branches" ]; then
+    return 0
+  fi
+
+  while IFS= read -r branch; do
+    [ -n "$branch" ] || continue
+    git branch -D "$branch" || cleanup_status=$?
+  done <<< "$branches"
+
+  return "$cleanup_status"
+}

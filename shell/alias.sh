@@ -19,4 +19,4 @@ alias git-cleanup='git switch main && git branch | grep -v "main" | xargs git br
   *) PATH="$HOME/.local/bin:$PATH" ;;     # otherwise prepend
 esac
 alias clauded='claude --dangerously-skip-permissions'
-alias codexd='codex --dangerously-bypass-approvals-and-sandbox -m gpt-5-codex -c model_reasoning_effort="high" --enable web_search_request'
+alias codexd='codex --dangerously-bypass-approvals-and-sandbox -m gpt-5.1-codex -c model_reasoning_effort="high" --enable web_search_request'

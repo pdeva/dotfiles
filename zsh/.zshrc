@@ -28,3 +28,6 @@ eval "$(atuin init zsh)"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+
+# Added by Antigravity
+export PATH="/Users/pdeva/.antigravity/antigravity/bin:$PATH"

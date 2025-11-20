@@ -16,7 +16,7 @@ alias gd='git diff'
 alias git-cleanup='git switch main && git_cleanup_delete_branches'
 alias gdp='git-cleanup && { echo "running git pull..."; git pull; }'
 alias clauded='claude --dangerously-skip-permissions'
-alias codexd='codex --dangerously-bypass-approvals-and-sandbox -m gpt-5.1-codex-max -c model_reasoning_effort="xhigh" --enable web_search_request'
+alias codexd='codex --dangerously-bypass-approvals-and-sandbox -m gpt-5.1-codex-max -c model_reasoning_effort="high" --enable web_search_request'
 
 [ -d "$HOME/.local/bin" ] && case ":$PATH:" in
   *":$HOME/.local/bin:"*) ;;              # already there → do nothing

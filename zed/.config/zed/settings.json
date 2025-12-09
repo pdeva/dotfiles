@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "colorize_brackets": true,
   "features": {
     "edit_prediction_provider": "zed"
   },
@@ -63,7 +64,7 @@
   "buffer_font_size": 16,
   "theme": {
     "mode": "system",
-    "light": "One Light",
+    "light": "Gruvbox Light Hard",
     "dark": "Tokyo Night"
   },
   "lsp": {

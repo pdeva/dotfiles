@@ -15,7 +15,7 @@ alias gsw='git switch'
 alias gd='git diff'
 alias git-cleanup='git switch main && git_cleanup_delete_branches'
 alias gdp='git-cleanup && { echo "running git pull..."; git pull; }'
-alias clauded='claude --dangerously-skip-permissions'
+alias clauded='CLAUDE_CODE_ENABLE_OPUS_4_7_FAST_MODE=true claude --dangerously-skip-permissions'
 alias codexd='codex --yolo'
 
 [ -d "$HOME/.local/bin" ] && case ":$PATH:" in

@@ -17,6 +17,7 @@ alias git-cleanup='git switch main && git_cleanup_delete_branches'
 alias gdp='git-cleanup && { echo "running git pull..."; git pull; }'
 alias clauded='CLAUDE_CODE_ENABLE_OPUS_4_7_FAST_MODE=true claude --dangerously-skip-permissions'
 alias codexd='codex --yolo'
+alias git-wt-clean='git worktree list --porcelain | grep "^worktree " | sed "s/^worktree //" | tail -n +2 | while read -r wt; do git worktree remove "$wt"; done'
 
 [ -d "$HOME/.local/bin" ] && case ":$PATH:" in
   *":$HOME/.local/bin:"*) ;;              # already there → do nothing

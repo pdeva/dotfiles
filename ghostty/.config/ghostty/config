@@ -1,4 +1,4 @@
-#theme = dark:catppuccin-mocha,light:Monokai Pro Light
+theme = light:Catppuccin Latte,dark:Catppuccin Mocha
 #theme = catppuccin-mocha
 
 font-size = 17

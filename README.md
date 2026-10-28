@@ -6,7 +6,7 @@ brew install stow
 ## Run
 
 ```shell
-stow git zsh
+stow git
 ```
 
 Neovim config is in nvim/.config/nvim directory

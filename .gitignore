@@ -2,3 +2,10 @@ nvim/.config/nvim/*.json
 ghostty/**/*.bak
 .DS_Store
 Thumbs.db
+
+# Keep machine-local configuration out of Git.
+/acty/
+/atuin/
+/claude/
+/zed/
+/zsh/

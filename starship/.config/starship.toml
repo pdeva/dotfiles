@@ -1,4 +1,5 @@
-palette = "catppuccin_mocha"
+# Use terminal colors so the prompt follows Ghostty light/dark mode.
+
 [golang]
 disabled = true
 

@@ -1,5 +1,5 @@
-theme = light:Catppuccin Latte,dark:Catppuccin Mocha
-#theme = catppuccin-mocha
+# Use bundled palettes for both modes, with a warmer light theme.
+theme = light:Monokai Pro Light Sun,dark:Catppuccin Mocha
 
 font-size = 17
 font-family = TX-02

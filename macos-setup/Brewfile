@@ -1,0 +1,20 @@
+brew "mas"
+
+cask "google-chrome"
+cask "1password"
+cask "sublime-text"
+cask "sublime-merge"
+cask "fork"
+cask "task-manager-tmog"
+cask "visual-studio-code"
+cask "chatgpt"
+cask "claude"
+cask "ghostty"
+cask "dropbox"
+cask "devin-desktop"
+cask "cursor"
+cask "grok-bot"
+
+mas "WhatsApp Messenger", id: 310633997
+mas "Amphetamine", id: 937984704
+mas "Magnet", id: 441258766

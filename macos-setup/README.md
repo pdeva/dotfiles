@@ -46,6 +46,8 @@ You can also copy this folder to another Mac and run `brew bundle install` from 
 - Devin Desktop
 - Cursor
 - Grok Bot desktop
+- Hex (Anomaly)
+- Loom (Atlassian)
 - WhatsApp Messenger (Mac App Store)
 - Amphetamine (Mac App Store)
 - Magnet (Mac App Store)

@@ -14,6 +14,8 @@ cask "dropbox"
 cask "devin-desktop"
 cask "cursor"
 cask "grok-bot"
+cask "anomaly-hex"
+cask "loom"
 
 mas "WhatsApp Messenger", id: 310633997
 mas "Amphetamine", id: 937984704

@@ -30,6 +30,25 @@ brew bundle install --file=macos-setup/Brewfile
 
 You can also copy this folder to another Mac and run `brew bundle install` from inside it. Run the same command again after adding apps to the Brewfile.
 
+## Install command-line tools
+
+From the repository root, run:
+
+```sh
+./macos-setup/install-clis.sh
+```
+
+The script runs the official standalone installers for [rustup](https://rust-lang.org/tools/install),
+[Codex CLI](https://learn.chatgpt.com/docs/codex/cli),
+[Claude Code](https://code.claude.com/docs/en/setup), and
+[uv](https://docs.astral.sh/uv/getting-started/installation/).
+Rustup installs the default Rust toolchain with its default options without prompting.
+The script stops if an installer fails. You can also run `./install-clis.sh` from this folder.
+
+Open a new terminal after installation to pick up PATH changes, then run `codex` and
+`claude` to sign in. Check the installations with `rustup --version`, `codex --version`,
+`claude --version`, and `uv --version`.
+
 ## Included apps
 
 - Google Chrome

@@ -51,6 +51,7 @@ You can also copy this folder to another Mac and run `brew bundle install` from 
 - WhatsApp Messenger (Mac App Store)
 - Amphetamine (Mac App Store)
 - Magnet (Mac App Store)
+- Slack for Desktop (Mac App Store)
 
 The requested Claude Code desktop app is represented by the `claude` cask, which installs `Claude.app`. See the [Homebrew package details](https://formulae.brew.sh/cask/claude).
 

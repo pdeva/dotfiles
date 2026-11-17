@@ -1,4 +1,5 @@
 brew "mas"
+brew "gh"
 
 cask "google-chrome"
 cask "1password"

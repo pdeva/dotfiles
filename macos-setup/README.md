@@ -1,6 +1,24 @@
 # macOS setup
 
-Install the desktop apps in `Brewfile` on a new MacBook with Homebrew.
+Install apps and command-line tools and configure preferences on a new Mac.
+
+## Set macOS preferences
+
+From the repository root, run this as the user whose preferences you want to set. No `sudo` is needed.
+
+```sh
+./macos-setup/set-preferences.sh
+```
+
+The script enables key repeat when you hold down a key and disables font smoothing for your account on this Mac.
+
+To see what the stored values mean, run:
+
+```sh
+./macos-setup/show-preferences.sh
+```
+
+The script only reads preferences and prints `(unset)` if a value is absent. It reads font smoothing for the current Mac.
 
 ## Install Homebrew
 

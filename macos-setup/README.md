@@ -48,6 +48,8 @@ brew bundle install --file=macos-setup/Brewfile
 
 You can also copy this folder to another Mac and run `brew bundle install` from inside it. Run the same command again after adding apps to the Brewfile.
 
+Install Loom separately from the [official Atlassian download page](https://www.atlassian.com/software/loom/download).
+
 ## Install command-line tools
 
 From the repository root, run:
@@ -84,7 +86,6 @@ Open a new terminal after installation to pick up PATH changes, then run `codex`
 - Cursor
 - Grok Bot desktop
 - Hex (Anomaly)
-- Loom (Atlassian)
 - WhatsApp Messenger (Mac App Store)
 - Amphetamine (Mac App Store)
 - Magnet (Mac App Store)

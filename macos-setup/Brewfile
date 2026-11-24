@@ -17,7 +17,6 @@ cask "cursor"
 cask "jetbrains-toolbox"
 cask "grok-bot"
 cask "anomaly-hex"
-cask "loom"
 
 mas "WhatsApp Messenger", id: 310633997
 mas "Amphetamine", id: 937984704
